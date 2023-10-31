@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app>
+  
+  <servlet>
+  	<servlet-name>RegisterServlets</servlet-name>
+  	
+  	<servlet-class>com.alok.servlets.RegisterServlets</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RegisterServlets</servlet-name>
+  	<url-pattern>/abc</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	
+  	<servlet-class>com.alok.servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/pqr</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	
+  	<servlet-class>com.alok.servlets.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>ProductOperationServlet</servlet-name>
+  	
+  	<servlet-class>com.alok.servlets.ProductOperationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProductOperationServlet</servlet-name>
+  	<url-pattern>/ProductOperationServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Filter  -->
+  <filter>
+  	<filter-name>abc</filter-name>
+  	<filter-class>com.alok.filter.myFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>abc</filter-name>
+  	<url-pattern>/user_details.jsp</url-pattern>
+  </filter-mapping>
+  
+</web-app>
